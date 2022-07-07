@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Song Title</th>
+                        <th>Artist</th>
+                        <th>Genre</th>
+                        <th>Album Title</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for song in data %}
+                        <tr>
+                            <td>{{song['title']}}</td>
+                            <td>{{song['album']}}</td>
+                            <td>{{song['artist']}}</td>
+                            <td>{{song['genre']}}</td>
+                            <td>{{song['releaseDate']}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
